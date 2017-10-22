@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+body {
+  background: #F9EDCC;  /* fallback for old browsers */
+}
+#calculator {
+  width: 414px;
+  text-align: center;
+  margin: 35px auto;
+  background-color: #EDAE49;
+  font-size: 0;
+  box-shadow: 1px 5px 30px 1px rgba(0,0,0,0.2);
+  font-family: 'Slabo 27px', serif;
+  padding: 10px;
+  border-radius: 4px;
+}
+.button, .result {
+  display: inline-block;
+  width:25%;
+  background-color: #61210F;
+  color: #F9EDCC  ;
+  height:103.5px;
+  font-size:30px;
+  border: 2px solid #EDAE49;
+  box-sizing:border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #103895;
+  transition: 0.5s;
+}
+
+.button:active {
+  background-color: #006868;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+.result {
+  width:100%;
+  cursor: default;
+  text-align: right;
+  font-weight: bold;
+  padding: 0 10px;
+  background-color: #61210F ;
+  font-size: 48px;
+}
+#calculator div:last-child {
+  width:50%;
+}
+
+.switch {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background-color: #61210F;
+  color: #FFFFFF;
+  outline: none;
+  padding: 10px 10px;
+  font-size: 1em;
+  border: 0;
+}
+
+.switch:active {
+  background-color: #006868;
+  transition: 0.1s;
+  transform: scale(1.2);
+}
