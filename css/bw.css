@@ -1,0 +1,42 @@
+body {
+  background-color: #BDBDBD;
+}
+#calculator {
+  width: 414px;
+  text-align: center;
+  margin: 35px auto;
+  background-color: #BDBDBD;
+  font-size: 0;
+  box-shadow: 1px 5px 30px 1px rgba(0,0,0,0.3);
+  border-radius: 7px;
+}
+.button, .result {
+  display: inline-block;
+  width:25%;
+  background-color: #646464;
+  height:103.5px;
+  font-size:40px;
+  font-family: "digital";
+  border: 1px solid #444444;
+  box-sizing:border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.button:hover {
+  border: 2px solid #000000;
+}
+.result {
+  background-color: #CDCDCD;
+  width:100%;
+  cursor: default;
+  text-align: right;
+  padding: 0 10px;
+}
+#calculator div:last-child {
+  width:50%;
+}
+@font-face {
+    font-family: 'digital';
+    src: url('fonts/digital-italic.ttf');
+}
