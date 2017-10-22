@@ -1,5 +1,5 @@
 body {
-  background-color: #fdf3c0;
+  background-color: #80d0e0;
 }
 #calculator {
   width: 414px;
@@ -12,10 +12,11 @@ body {
 .button, .result {
   display: inline-block;
   width:25%; 
-  background-color: #F5E177;
+  background-color: #151d26;
+  color: #bcb;
   height:103.5px;
   font-size:30px;
-  border: 1px solid #F4D171;
+  border: 1px solid #80d0e0;
   box-sizing:border-box;
   line-height: 101.5px;
   cursor: pointer;
