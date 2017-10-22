@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+body {
+  background: #23074d;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+#calculator {
+  width: 414px;
+  text-align: center;
+  margin: 35px auto;
+  background-color: #E87E04;
+  font-size: 0;
+  box-shadow: 1px 5px 30px 1px rgba(0,0,0,0.2);
+  font-family: 'Slabo 27px', serif;
+  padding: 10px;
+  border-radius: 4px;
+}
+.button, .result {
+  display: inline-block;
+  width:25%; 
+  background-color: #353535;
+  color: #FFFFFF;
+  height:103.5px;
+  font-size:30px;
+  border: 2px solid #E87E04;
+  box-sizing:border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #232526;
+  transition: 0.5s;
+}
+
+.button:active {
+  background-color: #674172;
+  transition: 0.5s;
+}
+
+.result {
+  width:100%;
+  cursor: default;
+  text-align: right;
+  padding: 0 10px;
+  background-color: #E87E04;
+  font-size: 48px;
+}
+#calculator div:last-child {
+  width:50%;
+}
+
+.switch {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background-color: #E87E04;
+  color: #FFFFFF;
+  outline: none;
+  padding: 50px 50px;
+  font-size: 1em;
+  border: 0;
+}
