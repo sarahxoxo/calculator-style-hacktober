@@ -17,8 +17,8 @@ You can style it and make a pull request.
   for example: 
 ```
 	var styles = ["index.css",
-  				  "index2.css"
-  				];
+                      "index2.css"
+                     ];
 ```
   
 - make a pull request
