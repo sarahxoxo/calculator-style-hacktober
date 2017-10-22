@@ -14,5 +14,11 @@ You can style it and make a pull request.
 - add any style you like for the calculator 
 - add your `css file's name` at `line 38` in `index.html` file
 
-  (for example: `var styles = ["index.css","index2.css"];`)
+  for example: 
+```
+	var styles = ["index.css",
+                      "index2.css"
+                     ];
+```
+  
 - make a pull request
