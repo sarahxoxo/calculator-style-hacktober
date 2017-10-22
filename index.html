@@ -35,11 +35,27 @@
   <script>
     $(function() {
       $(".switch").click(function() {
-        //Do NOT change the code above.
-        var styles = ["index.css", "autumn_colors.css"];
 
+        // === Do NOT change the code above. ===
+        
+        // Add your stylesheets to this array.
+        // Each stylesheet should be on its own line to avoid conflicts.
+        // Don't forget to add a comma at the end of the previously last item.
 
-        //Do NOT change the code below.
+        var styles = ["index.css", 
+                      "halloween.css",
+                      "roysung.css", 
+                      "kyren.css",
+                      "material.css",
+                      "index-blackred.css",
+                      "index2.css",
+                      "ariq.css", 
+                      "blueindex.css",
+                      "autumn_colors.css"
+                     ];
+
+        // === Do NOT change the code below. ===
+        
         var random = Math.floor(Math.random()*styles.length);
         $(".styles").attr("href", "css/"+styles[random]+"");
           });

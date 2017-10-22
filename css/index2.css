@@ -1,0 +1,69 @@
+body {
+    background-color: #adcad8;
+    background: -webkit-linear-gradient(315deg, transparent 49.5%, #aac6d4 49.5%, #b3d0de 50%, #aac6d4 50.5%, transparent 50.5%) 0 0, -webkit-linear-gradient(45deg, transparent 49.5%, #aac6d4 49.5%, #b3d0de 50%, #aac6d4 50.5%, transparent 50.5%) 0 0, -webkit-linear-gradient(315deg, transparent 75%, #adcad8 75%) 100px 0, -webkit-linear-gradient(315deg, transparent 75%, #adcad8 75%) 0 100px, -webkit-linear-gradient(225deg, transparent 75%, #adcad8 75%) 0 100px, -webkit-linear-gradient(225deg, transparent 75%, #adcad8 75%) 100px 0, -webkit-linear-gradient(top, #adcad8 0%, #aac6d4 90%) 0 0;
+    background: linear-gradient(135deg, transparent 49.5%, #aac6d4 49.5%, #b3d0de 50%, #aac6d4 50.5%, transparent 50.5%) 0 0, linear-gradient(45deg, transparent 49.5%, #aac6d4 49.5%, #b3d0de 50%, #aac6d4 50.5%, transparent 50.5%) 0 0, linear-gradient(135deg, transparent 75%, #adcad8 75%) 100px 0, linear-gradient(135deg, transparent 75%, #adcad8 75%) 0 100px, linear-gradient(225deg, transparent 75%, #adcad8 75%) 0 100px, linear-gradient(225deg, transparent 75%, #adcad8 75%) 100px 0, linear-gradient(to bottom, #adcad8 0%, #aac6d4 90%) 0 0;
+    background-size: 200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 100px;
+    font-family:sans-serif;
+}
+#calculator {
+    width: 485px;
+    text-align: center;
+    margin: 35px auto;
+    background-color: #fff;
+    font-size: 0;
+    box-shadow: 1px 5px 30px 1px rgba(0,0,0,0.2);
+}
+.button, .result {
+    display: inline-block;
+    width:25%;
+    background-color: #5f5f5f;
+    height:103.5px;
+    font-size:30px;
+    border: 1px solid #969696;
+    box-sizing:border-box;
+    line-height: 101.5px;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+}
+.button:active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.5)
+}
+.result {
+    width:100%;
+    cursor: default;
+    text-align: right;
+    padding: 0 10px;
+    background: #fff;
+    color: #000;
+    font-size: 50px;
+}
+#calculator div:last-child {
+    width:50%;
+}
+[data-value="C"],
+[data-value="+/-"],
+[data-value="%"] {
+    background-color: #505050;
+}
+[data-value="÷"],
+[data-value="x"],
+[data-value="-"],
+[data-value="+"],
+[data-value="="] {
+    background-color: #4c6069;
+}
+.switch {
+    background: #f0f8ff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: block;
+    margin: 20px auto;
+}
