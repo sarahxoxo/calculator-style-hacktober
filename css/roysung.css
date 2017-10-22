@@ -1,0 +1,46 @@
+body {
+  background-color: #0bb6cc;
+}
+button:hover, .button:hover {
+  background: #fff; 
+}
+#calculator {
+  width: 414px;
+  background-color: #0bb6cc;
+  text-align: center;
+  margin: auto auto;
+  font-size: 0;
+}
+.button, .result {
+  display: inline-block;
+  width:25%; 
+  background-color: #b6def1;
+  height:103.5px;
+  font-size:30px;
+  border: 1px solid #0bb6cc;
+  box-sizing:border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+  transition: all .5s;
+  border-radius: 15px;
+}
+.result {
+  width:100%;
+  cursor: default;
+  text-align: right;
+  padding: 0 10px;
+  border-radius: 15px;
+}
+#calculator div:last-child {
+  width:50%;
+}
+.switch {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background: #b6def1;
+  transition: all .5s;
+}
