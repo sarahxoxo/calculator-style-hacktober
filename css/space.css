@@ -1,0 +1,52 @@
+body {
+  background: #000 url(http://sylvaingarnot.fr/media/stars.png) repeat 
+}
+#calculator {
+  width: 414px;
+  text-align: center;
+  margin: 35px auto;
+  font-size: 0;
+}
+#calculator div:last-child {
+  width:50%;
+}
+.button {
+  display: inline-block;
+  width:25%;
+  background-color: #454545;
+  height:103.5px;
+  font-size:30px;
+  border: 1px solid #000000;
+  box-sizing:border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+  color: #ffff00;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.button:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.result {
+  display: inline-block;
+  width: 25%;
+  background-color: #454545;
+  height: 140px;
+  font-size: 50px;
+  color: #ffff4d;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+  width:100%;
+  cursor: default;
+  text-align: right;
+  padding: 0 10px;
+    opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+.result:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
