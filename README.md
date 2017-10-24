@@ -10,15 +10,15 @@ You can style it and make a pull request.
 
 ## how to contribute
 
-- add a new `css file` in the css folder to get started
-- add any style you like for the calculator 
-- add your `css file's name` at `line 38` in `index.html` file
+- Add a new `css file` in the css folder to get started
+- Add any style you like for the calculator 
+- Add your `css file's name` at `line 38` in `index.html` file
 
-  for example: 
+  For Example: 
 ```
 	var styles = ["index.css",
                       "index2.css"
                      ];
 ```
   
-- make a pull request
+- Make a pull request
