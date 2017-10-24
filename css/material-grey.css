@@ -1,0 +1,54 @@
+body {
+  background-color: grey;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+#calculator {
+  width: 414px;
+  text-align: center;
+  margin: 35px auto;
+  background-color: #fff;
+  font-size: 0;
+  box-shadow: 1px 5px 30px 1px rgba(0,0,0,0.2);
+}
+
+.switch {
+    background: #f0f8ff;
+    border: none;
+    padding: 10px 20px;
+	color:red;
+    font-size: 18px;
+    display: block;
+    margin: 20px auto;
+}
+
+.button {
+  display: inline-block;
+  width:25%;
+  background-color: #454545;
+  height:103.5px;
+  font-size:30px;
+  box-sizing:border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.result {
+    display: inline-block;
+    width: 25%;
+    height: 140px;
+    font-size: 50px;
+    color: #747474;
+    box-sizing: border-box;
+    line-height: 101.5px;
+    cursor: pointer;
+}
+.result {
+  width:100%;
+  cursor: default;
+  text-align: right;
+  padding: 0 10px;
+}
+#calculator div:last-child {
+  width:50%;
+}
