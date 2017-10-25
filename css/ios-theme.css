@@ -1,0 +1,112 @@
+body {
+  background: url("https://www.iphonetricks.org/wp-content/uploads/2017/06/ios-11-wallpaper-for-mac.jpg")no-repeat -400px;
+  font-family: Helvetica;
+}
+
+#calculator {
+  width: 414px;
+  text-align: center;
+  margin: 35px auto;
+  background-color: #000;
+  border: 5px solid #000;
+  border-radius: 10px;
+  font-size: 0;
+}
+
+.button, .result{
+  display: inline-block;
+  width:25%;
+  color:#f2f2f2;
+  height:103.5px;
+  font-size:45px;
+  border: 5px solid #000;
+  border-radius: 50px;
+  box-sizing:border-box;
+  line-height: 85px;
+  cursor: pointer;
+}
+
+[data-value="x"],
+[data-value="+"],
+[data-value="-"],
+[data-value="="],
+[data-value="÷"]{
+    background-color:	#ff9900;
+}
+
+[data-value="x"]:active,
+[data-value="+"]:active,
+[data-value="-"]:active,
+[data-value="="]:active,
+[data-value="÷"]:active{
+    background-color:	#fff;
+    color: #ff9900;
+}
+
+[data-value="C"],
+[data-value="+/-"],
+[data-value="%"] {
+  background-color: #a6a6a6;
+  color:#000;
+}
+
+[data-value="C"]:active,
+[data-value="+/-"]:active,
+[data-value="%"]:active {
+  background-color: #ccc;
+  color:#000;
+}
+
+[data-value="1"],
+[data-value="2"],
+[data-value="3"],
+[data-value="4"],
+[data-value="5"],
+[data-value="6"],
+[data-value="7"],
+[data-value="8"],
+[data-value="9"],
+[data-value="0"],
+[data-value="."]{
+  background-color: #333333;
+}
+
+[data-value="1"]:active,
+[data-value="2"]:active,
+[data-value="3"]:active,
+[data-value="4"]:active,
+[data-value="5"]:active,
+[data-value="6"]:active,
+[data-value="7"]:active,
+[data-value="8"]:active,
+[data-value="9"]:active,
+[data-value="0"]:active,
+[data-value="."]:active{
+  background-color: #737373;
+}
+
+.switch{
+  padding:15px;
+  background-color: #ccc;
+  border: 2px solid #ccc;
+  opacity: .8;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.result {
+  display: inline-block;
+  color:#f2f2f2;
+  font-size:70px;
+  border: 1px solid #000;
+  box-sizing:border-box;
+  line-height: 93px;
+  width:100%;
+  text-align: right;
+  padding: 0 10px;
+}
+
+#calculator div:last-child {
+  width:50%;
+}
