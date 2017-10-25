@@ -33,42 +33,41 @@
   </div>
   <button class="switch">see another style</button>
   <script>
-  $(function() {
-	$('.switch').click(function() {
-		// === Do NOT change the code above. ===
+    $(function() {
+      $(".switch").click(function() {
+        // === Do NOT change the code above. ===
 
-		// Add your stylesheets to this array.
-		// Each stylesheet should be on its own line to avoid conflicts.
-		// Don't forget to add a comma at the end of the previously last item.
-		var styles = [
-			'index.css',
-			'halloween.css',
-			'roysung.css',
-			'kyren.css',
-			'material.css',
-			'index-blackred.css',
-			'index2.css',
-			'ariq.css',
-			'blueindex.css',
-			'autumn_colors.css',
-			'bw.css',
-			'ios-theme.css',
-			'nix.css',
-			'space.css',
-			'dark.css',
-			'midnight_blue.css',
-			'blueish.css',
-			'weirdo.css',
-			'monokai.css',
-			'melisa.css'
-		];
+        // Add your stylesheets to this array.
+        // Each stylesheet should be on its own line to avoid conflicts.
+        // Don't forget to add a comma at the end of the previously last item.
+        var styles = ["index.css",
+                      "halloween.css",
+                      "roysung.css",
+                      "kyren.css",
+                      "material.css",
+                      "index-blackred.css",
+                      "index2.css",
+                      "ariq.css",
+                      "blueindex.css",
+                      "autumn_colors.css",
+                      "bw.css",
+                      "ios-theme.css",
+                      "nix.css",
+                      "space.css",
+                      "dark.css",
+                      "midnight_blue.css",
+                      "blueish.css",
+                      "weirdo.css",
+                      "monokai.css",
+                      "melisa.css"
+                     ];
 
-		// === Do NOT change the code below. ===
+        // === Do NOT change the code below. ===
 
-		var random = Math.floor(Math.random() * styles.length);
-		$('.styles').attr('href', 'css/' + styles[random] + '');
-	});
-});
-</script>
+        var random = Math.floor(Math.random()*styles.length);
+        $(".styles").attr("href", "css/"+styles[random]+"");
+          });
+    });
+  </script>
 </body>
 </html>
