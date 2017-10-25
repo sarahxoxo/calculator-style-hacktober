@@ -25,7 +25,6 @@ $(function() {
         currentEntry += pressed.toString();
       }
       updateScreen(currentEntry);
-
     } else if(isOperator(pressed)) {
       prevEntry = currentEntry;
       operation = pressed;
