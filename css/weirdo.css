@@ -57,6 +57,9 @@ body {
   background-image: -o-linear-gradient(top, #9fcfdd 0%, #7eafbe 100%);
   background-image: linear-gradient(to bottom, #9fcfdd 0%, #7eafbe 100%);
 }
+#calculator .result span {
+  display: inline-block;
+}
 #calculator .button {
   float: left;
   width: 90px;
@@ -65,6 +68,7 @@ body {
   margin: 18px 0 0 18px;
   text-align: center;
   line-height: 90px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkM2QyY2QiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2FjYWVhMyIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
   background-image: -webkit-linear-gradient(top, #d3d2cd 0%, #acaea3 100%);
   background-image: -moz-linear-gradient(top, #d3d2cd 0%, #acaea3 100%);
