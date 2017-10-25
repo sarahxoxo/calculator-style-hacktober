@@ -18,6 +18,14 @@ $(function() {
     } else if(pressed === "%") {
       currentEntry /= 100;
       updateScreen(currentEntry);
+    } else if(pressed === ".") {
+       if(currentEntry === 0) {
+        currentEntry = pressed;
+      } else {
+        currentEntry += pressed.toString();
+      }
+      updateScreen(currentEntry);
+
     } else if(isOperator(pressed)) {
       prevEntry = currentEntry;
       operation = pressed;
