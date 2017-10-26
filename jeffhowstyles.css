@@ -1,1 +1,16 @@
-/** Jeff.how Styles **/
+/** Jeff's simple styles**/
+.calculator{
+  font-family: sans-serif;
+  color:#666;
+}
+.button{
+  background-color:#eee;
+  border-color:#ccc;
+}
+.result{
+  background-color:#FFF;
+  border-color:#ccc;
+}
+body{
+  background-color:#ddd;
+}
