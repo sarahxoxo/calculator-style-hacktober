@@ -1,0 +1,23 @@
+/*
+This file contains the base styles used for the calculator.
+To add your own theme, see the README.md 
+*/
+
+
+/* Disable selection for everything */
+*
+{
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Allow selection for result container */
+#calculator .result span
+{
+  user-select: auto;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+}
