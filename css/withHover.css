@@ -29,3 +29,11 @@ body {
 #calculator div:last-child {
   width:50%;
 }
+
+
+
+
+.button:hover{
+
+    background-color: rgba(245, 225, 119, 0.83);
+}
