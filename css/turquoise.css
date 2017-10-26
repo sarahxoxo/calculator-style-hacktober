@@ -1,0 +1,77 @@
+body {
+  background-color: #002f43;
+}
+#calculator {
+  width: 414px;
+  text-align: center;
+  margin: 35px auto;
+  background-color: #fff;
+  font-size: 0;
+  box-shadow: 1px 5px 30px 1px rgba(0,0,0,0.2);
+}
+.button, .result {
+  display: inline-block;
+  width:25%;
+  background-color: #12a9b0;
+  height:103.5px;
+  font-size:30px;
+  border: 0.05px solid #a5bdc1;
+  box-sizing:border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+  color: #002f43;
+}
+.result {
+  width:100%;
+  cursor: default;
+  text-align: right;
+  background-color:#a5bdc1;
+  color: #d3215d;
+  font-size:60px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
+#calculator div:last-child {
+  width:50%;
+}
+.switch {
+  color: #a5bdc1;
+  font-size: 18px;
+  background-color:#002f43;
+  cursor: pointer;
+  margin-left: 500px;
+  padding: 15px;
+  font-weight: 50;
+}
+[data-value="="] {
+    background-color: #a5bdc1;
+    color:#d3215d;
+}
+[data-value="C"] {
+    color:#a5bdc1;
+    background-color: #d3215d;
+}
+[data-value="+/-"] {
+    color:#a5bdc1;
+    background-color: #002f43;
+}
+[data-value="%"] {
+  color:#a5bdc1;
+  background-color: #002f43;
+}
+[data-value="÷"] {
+    color:#a5bdc1;
+    background-color: #002f43;
+}
+[data-value="x"] {
+    color:#a5bdc1;
+    background-color: #002f43;
+}
+[data-value="-"] {
+    color:#a5bdc1;
+    background-color: #002f43;
+}
+[data-value="+"] {
+    color:#a5bdc1;
+    background-color: #002f43;
+}
