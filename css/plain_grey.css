@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background-color: #777978;
+  font-family: 'Roboto', sans-serif;
+}
+
+#calculator {
+  width: 550px;
+  text-align: center;
+  margin: 25px auto;
+  background-color: #3d3545;
+  font-size: 0;
+  border-radius: 10px;
+  box-shadow: 1px 5px 30px 1px rgba(0,0,0,0.8);
+}
+
+.button, .result {
+  display: inline-block;
+  width: 25%;
+  color: #ffffff;
+  padding: 2px;
+  background-color: #222;
+  height:103.5px;
+  font-size:30px;
+  border: 1px solid #3d3545;
+  border-radius: 5px;
+  box-sizing:border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+}
+.result {
+  width:140%;
+  cursor: default;
+  text-align: right;
+  padding: 0 10px;
+  font-size: 60px;
+  font-weight: 600;
+}
+#calculator div:last-child {
+  width:50%;
+}

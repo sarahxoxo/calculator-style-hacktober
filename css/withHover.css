@@ -1,26 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-
 body {
-  background-color: #D991A2;
+  background-color: #fdf3c0;
 }
 #calculator {
-  font-family: 'Pacifico', cursive;
   width: 414px;
   text-align: center;
   margin: 35px auto;
   background-color: #fff;
   font-size: 0;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  border-radius: 15px 50px;
+  box-shadow: 1px 5px 30px 1px rgba(0,0,0,0.2);
 }
-
 .button, .result {
   display: inline-block;
-  width:25%;
-  background-color: #ffffff;
+  width:25%; 
+  background-color: #F5E177;
   height:103.5px;
   font-size:30px;
-  border: 1px solid #000000;
+  border: 1px solid #F4D171;
   box-sizing:border-box;
   line-height: 101.5px;
   cursor: pointer;
@@ -33,4 +28,12 @@ body {
 }
 #calculator div:last-child {
   width:50%;
+}
+
+
+
+
+.button:hover{
+
+    background-color: rgba(245, 225, 119, 0.83);
 }
