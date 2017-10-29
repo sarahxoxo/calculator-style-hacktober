@@ -35,7 +35,6 @@
   <button class="switch">see another style</button>
   <script>
     $(function() {
-      $(".switch").click(function() {
         // === Do NOT change the code above. ===
 
         // Add your stylesheets to this array.
@@ -77,9 +76,24 @@
                         ];
         // === Do NOT change the code below. ===
 
-        var random = Math.floor(Math.random()*styles.length);
-        $(".styles").attr("href", "css/"+styles[random]+"");
-          });
+        
+        // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+        function shuffleArray(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+        
+        // perform the shuffle
+        shuffleArray( styles );
+        var index = 0;
+        
+      $(".switch").click(function() {
+        $(".styles").attr("href", "css/"+styles[(index++)%styles.length]+"");
+      });
     });
   </script>
 </body>
