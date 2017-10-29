@@ -1,90 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="base-styles.css">
-  <link class="styles" rel="stylesheet" href="css/index.css">
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="base-styles.css">
+    <link class="styles" rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
 </head>
+
 <body>
-  <div id="calculator">
-    <div class="result"><span>0</span></div>
-    <div class="button" data-value="C">C</div>
-    <div class="button" data-value="+/-">+/-</div>
-    <div class="button" data-value="%">%</div>
-    <div class="button" data-value="÷">÷</div>
-    <div class="button" data-value="7">7</div>
-    <div class="button" data-value="8">8</div>
-    <div class="button" data-value="9">9</div>
-    <div class="button" data-value="x">x</div>
-    <div class="button" data-value="4">4</div>
-    <div class="button" data-value="5">5</div>
-    <div class="button" data-value="6">6</div>
-    <div class="button" data-value="-">-</div>
-    <div class="button" data-value="1">1</div>
-    <div class="button" data-value="2">2</div>
-    <div class="button" data-value="3">3</div>
-    <div class="button" data-value="+">+</div>
-    <div class="button" data-value="0">0</div>
-    <div class="button" data-value=".">.</div>
-    <div class="button" data-value="=">=</div>
-  </div>
-  <button class="switch">see another style</button>
-  <script>
-    $(function() {
-      $(".switch").click(function() {
-        // === Do NOT change the code above. ===
+    <div id="calculator">
+        <div class="result"><span>0</span></div>
+        <div class="button" data-value="C">C</div>
+        <div class="button" data-value="+/-">+/-</div>
+        <div class="button" data-value="%">%</div>
+        <div class="button" data-value="÷">÷</div>
+        <div class="button" data-value="7">7</div>
+        <div class="button" data-value="8">8</div>
+        <div class="button" data-value="9">9</div>
+        <div class="button" data-value="x">x</div>
+        <div class="button" data-value="4">4</div>
+        <div class="button" data-value="5">5</div>
+        <div class="button" data-value="6">6</div>
+        <div class="button" data-value="-">-</div>
+        <div class="button" data-value="1">1</div>
+        <div class="button" data-value="2">2</div>
+        <div class="button" data-value="3">3</div>
+        <div class="button" data-value="+">+</div>
+        <div class="button" data-value="0">0</div>
+        <div class="button" data-value=".">.</div>
+        <div class="button" data-value="=">=</div>
+    </div>
+    <button class="switch">see another style</button>
+    <script>
+        $(function() {
+            $(".switch").click(function() {
+                // === Do NOT change the code above. ===
 
-        // Add your stylesheets to this array.
-        // Each stylesheet should be on its own line to avoid conflicts.
-        // Don't forget to add a comma at the end of the previously last item.
-        var styles = ["index.css",
-                      "halloween.css",
-                      "roysung.css",
-		      "winter.css",
-                      "kyren.css",
-                      "material.css",
-                      "index-blackred.css",
-                      "royal.css",
-                      "index2.css",
-                      "ariq.css",
-                      "blueindex.css",
-                      "autumn_colors.css",
-                      "bw.css",
-                      "ios-theme.css",
-                      "nix.css",
-                      "space.css",
-                      "dark.css",
-                      "midnight_blue.css",
-                      "blueish.css",
-                      "weirdo.css",
-                      "monokai.css",
-                      "pretty.css",
-                      "flat.css",
-                      "neonlight.css",
-                      "turquoise.css",
-                      "plain_gray.css",
-                      "withHover.css",
-                      "turquoise.css",
-                      "melisa.css",
-		                  "glow.css",
-		                  "green-calc.css",
-                      "neonlight.css",
-                      "mystyle.css",
-                      "jeffhowstyles.css",
-                      "shauna.css",
-		                  "glow.css"
-                     ];
-        
-        // === Do NOT change the code below. ===
+                // Add your stylesheets to this array.
+                // Each stylesheet should be on its own line to avoid conflicts.
+                // Don't forget to add a comma at the end of the previously last item.
+                var styles = ["index.css",
+                    "halloween.css",
+                    "roysung.css",
+                    "winter.css",
+                    "jjaxx.css",
+                    "kyren.css",
+                    "material.css",
+                    "index-blackred.css",
+                    "royal.css",
+                    "index2.css",
+                    "ariq.css",
+                    "blueindex.css",
+                    "autumn_colors.css",
+                    "bw.css",
+                    "ios-theme.css",
+                    "nix.css",
+                    "space.css",
+                    "dark.css",
+                    "midnight_blue.css",
+                    "blueish.css",
+                    "weirdo.css",
+                    "monokai.css",
+                    "pretty.css",
+                    "flat.css",
+                    "neonlight.css",
+                    "turquoise.css",
+                    "plain_gray.css",
+                    "withHover.css",
+                    "turquoise.css",
+                    "melisa.css",
+                    "glow.css",
+                    "green-calc.css",
+                    "neonlight.css",
+                    "mystyle.css",
+                    "jeffhowstyles.css",
+                    "shauna.css",
+                    "glow.css"
+                ];
 
-        var random = Math.floor(Math.random()*styles.length);
-        $(".styles").attr("href", "css/"+styles[random]+"");
-          });
-    });
-  </script>
+                // === Do NOT change the code below. ===
+
+                var random = Math.floor(Math.random() * styles.length);
+                $(".styles").attr("href", "css/" + styles[random] + "");
+            });
+        });
+    </script>
 </body>
 </html>
