@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+:root {
+    --color-bg-1: #E59B0E;
+    --color-bg-2: #F26103;
+    --calculator-color: #1DABB2;
+    --boton-color: #2B394C;
+    --boton-hover: #2E3133;
+    --boton-active: #8C8C8C;
+    --boton-box-shadow: rgba(0,0,0,0.1);
+    --calculator-box-shadow: rgba(0,0,0,0.2);
+    --font-color: white;
+}
+body {
+    background: var(--color-bg-1);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--color-bg-1), var(--color-bg-2));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--color-bg-1), var(--color-bg-2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+#calculator {
+    width: 400px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: var(--calculator-color);
+    font-size: 0;
+    box-shadow: 1px 5px 30px 1px var(--calculator-box-shadow);
+    font-family: 'Special Elite', cursive;
+    padding: 10px;
+    border-radius: 4px;
+}
+.button, .result {
+    display: inline-block;
+    width:25%; 
+    background-color: var(--boton-color);
+    color: var(--font-color);
+    height:103.5px;
+    font-size:30px;
+    border: 2px solid var(--calculator-color);
+    box-sizing:border-box;
+    line-height: 101.5px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: var(--boton-hover);
+    transition: 0.5s;
+}
+
+.button:active {
+    background-color: var(--boton-active);
+    transition: 0.5s;
+}
+
+.result {
+    width:100%;
+    cursor: default;
+    text-align: right;
+    padding: 0 10px;
+    background-color: var(--calculator-color);
+    font-size: 48px;
+}
+#calculator div:last-child {
+    width:50%;
+}
+
+.switch {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: var(--font-color);
+    outline: none;
+    font-family: 'Special Elite', cursive;
+    background: var(--calculator-color);
+    font-size: 1em;
+    padding: 20px 20px; 
+    border-radius:6px; 
+    border:solid var(--calculator-box-shadow); 
+    border-width:1px 1px 5px; 
+    box-shadow:0 5px 0 var(--boton-box-shadow), inset 0 0 3px var(--calculator-color); 
+    cursor:pointer; 
+    user-select:none; 
+    transition:0.4s ease;
+}
+
+.switch:hover { 
+    transform:translateY(-3px); 
+    box-shadow:0 6px 0 var(--boton-box-shadow), inset 0 0 1px var(--calculator-color); 
+    border-bottom-width:8px; 
+}
+
+.switch:active { 
+    transform:translateY(4px); 
+    box-shadow:0 2px 0 var(--boton-box-shadow), inset 0 0 5px var(--calculator-color); 
+    border-bottom-width:2px; 
+    transition:0.1s ease; 
+}
