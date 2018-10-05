@@ -1,0 +1,7 @@
+body {background-color: #E3ABBF; font:36px san-serif} 
+
+#calculator {position: fixed; top 20px; left:200px; width:650px; height:600px; background-color: #ffffff}
+
+.result {display:inline-block; margin:5px 10px 60px 15px; height:15%; width:90%; border:2px solid black; background-color: #7C1B3C; color: #ffffff}
+.button {display:inline-block; margin:0px 10px 10px 15px; height:10%; width:18%; border:2px solid black; color: #7C1B3C; text-align:center}
+.switch {position: fixed; bottom: 20px; background-color: #7C1B3C; color: #ffffff}

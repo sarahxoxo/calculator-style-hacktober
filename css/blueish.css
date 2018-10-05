@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+body {
+    background-color: #EDEDEE;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#calculator {
+    width: 414px;
+    text-align: center;
+    margin: 35px auto;
+    background-color: #fff;
+    font-size: 0;
+    box-shadow: 1px 5px 30px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button,
+.result {
+    display: inline-block;
+    width: 25%;
+    background-color: white;
+    color: #353535;
+    height: 100px;
+    font-size: 28px;
+    box-sizing: border-box;
+    line-height: 101.5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #EDEDEE;
+}
+
+.button:active {
+    background-color: #cee1ff;
+    transition: 0.3s;
+}
+
+
+.result {
+    width: 100%;
+    text-align: right;
+    padding: 0 30px;
+    background-color: #3f87f5;
+    font-weight: 700;
+    color: white;
+}
+
+
+[data-value="C"] {
+    color: #3f87f5;
+    font-weight: 700;
+}
+
+[data-value="÷"],
+[data-value="x"],
+[data-value="-"],
+[data-value="+"] {
+    color: #adadad;
+    font-weight: 700;
+}
+
+[data-value="="] {
+    background-color: #3f87f5;
+    width: 50%;
+    font-weight: 700;
+    color: white;
+}
+
+.switch {
+    background-color: #3f87f5;
+    padding: 10px 30px 10px 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}

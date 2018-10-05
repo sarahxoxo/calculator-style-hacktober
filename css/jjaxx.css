@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url(https://fonts.googleapis.com/css?family=Raleway);
+
+    font-family: font-family: 'Orbitron', sans-serif;
+    src: url(https://fonts.googleapis.com/css?family=Orbitron);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f2f2f2;
+
+}
+
+
+
+#calculator {
+    width: 420px;
+    text-align: center;
+    margin: 35px auto;
+    background-color: #181a1c;
+    border-radius: 10px;
+    font-size: 0;
+    padding-bottom: 50px;
+}
+
+.button {
+    display: inline-block;
+    width: 20%;
+    color: #000;
+    font-size: 40px;
+    font-weight: 800;
+    border-radius: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition-duration: 300ms;
+    border: 1px black solid;
+    line-height: 78px;
+    margin: 7px;
+    background-color: #e5e4dc;
+
+}
+
+
+.switch {
+    padding: 15px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    opacity: .8;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.result {
+    font-family: 'Orbitron', sans-serif;
+    display: inline-block;
+    color: #000;
+    background-color: #bdc4ba;
+    font-size: 70px;
+    border: 0px solid #000;
+    border-radius: 20px;
+    box-sizing: border-box;
+    line-height: 93px;
+    width: 89%;
+    text-align: right;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+
+#calculator div:last-child {
+    width: 43%;
+}
+
+
+[data-value="C"] {
+    background-color: #961010;
+}
+
+[data-value="x"],
+[data-value="-"],
+[data-value="+"],
+[data-value="÷"],
+[data-value="="] {
+    background-color: #f9e03e;
+}
