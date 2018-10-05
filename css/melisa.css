@@ -1,0 +1,99 @@
+/*rainbow pattern*/
+
+body {
+	background: #000 url(https://static.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg)
+		repeat;
+}
+
+#calculator {
+	width: 414px;
+	text-align: center;
+	margin: 35px auto;
+	background-color: #fff;
+	font-size: 0;
+	box-shadow: 1px 5px 30px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+}
+.button,
+.result {
+	display: inline-block;
+	width: 25%;
+	background-color: #ffffff;
+	height: 103.5px;
+	font-size: 30px;
+	box-sizing: border-box;
+	line-height: 101.5px;
+	cursor: pointer;
+}
+
+.result {
+	width: 100%;
+	cursor: default;
+	text-align: right;
+	padding: 0 10px;
+}
+#calculator div:last-child {
+	width: 50%;
+}
+
+.switch {
+	background-color: white;
+	padding: 15px;
+	font-weight: 600;
+	border-radius: 30px;
+	font-size: x-large;
+}
+
+[data-value="C"],
+[data-value="+/-"],
+[data-value="%"],
+[data-value="÷"] {
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(red, orange); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(red, orange); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(red, orange); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(red, orange); /* Standard syntax */
+}
+
+[data-value="7"],
+[data-value="8"],
+[data-value="9"],
+[data-value="x"] {
+	background: yellow; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(orange, yellow); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(orange, yellow); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(orange, yellow); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(orange, yellow); /* Standard syntax */
+}
+
+[data-value="4"],
+[data-value="5"],
+[data-value="6"],
+[data-value="-"] {
+	background: green; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(yellow, green); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(yellow, green); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(yellow, green); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(yellow, green); /* Standard syntax */
+}
+
+[data-value="1"],
+[data-value="2"],
+[data-value="3"],
+[data-value="+"] {
+	background: blue; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(green, blue); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(green, blue); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(green, blue); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(green, blue); /* Standard syntax */
+}
+
+[data-value="0"],
+[data-value="."],
+[data-value="="] {
+	background: purple; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(blue, purple); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(blue, purple); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(blue, purple); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(blue, purple); /* Standard syntax */
+}

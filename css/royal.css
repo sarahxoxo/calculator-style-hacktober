@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+  background: #3a3a3a;  /* fallback for old browsers */
+}
+
+#calculator {
+  width: 360px;
+  text-align: center;
+  margin: 50px auto;
+  background: #1a1a1a;
+  font-size: 0;
+  box-shadow: 0px 0px 15px 5px #000000;
+  font-family: 'Roboto', serif;
+  border: solid 1px #000000;
+}
+
+.button, .result {
+  display: inline-block;
+  width: 25%;
+  color: #FFFFFF;
+  font-size: 30px;
+  box-sizing:border-box;
+  line-height: 80px;
+  height: 80px;
+  cursor: pointer;
+  
+}
+
+.result {
+  padding: 0 10px;
+  border-top: none;
+}
+
+.button {
+  border-right: 1px solid #373737;
+  color: #aaa;
+  border-top: 1px solid #373737;
+}
+
+.button:hover {
+  background: #3a3a3a;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.button:active {
+  background-color: #2b2b2b;
+  transition: 0.5s;
+}
+
+.result {
+  width:100%;
+  cursor: default;
+  text-align: right;
+  font-size: 48px;
+}
+
+#calculator div:last-child {
+  width:50%;
+  border-right: none;
+}
+
+#calculator div:nth-child(4n+1) {
+  border-right: none;
+}
+
+.switch {
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.5);
+    color: #777;
+    outline: none;
+    padding: 15px 25px;
+    text-transform: capitalize;
+    font-size: 1.25em;
+    border: 0;
+    cursor: pointer;
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: 0px 0px 15px 5px #000000;
+}
+.switch:hover{
+    color:#aaa;
+    background-color: #000;
+    transition: 0.5s;
+}
