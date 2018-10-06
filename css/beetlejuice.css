@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+
+:root {
+  --color-black: #130912;
+  --color-dark-purple: #3E1C33;
+  --color-purple: #602749;
+  --color-dark-orange: #B14623;
+  --color-pumpkin: #F6912D;
+  --color-yellow: #FFEE4A;
+  --color-white: #fefefe;
+} 
+
+#calculator {
+  display: grid;
+  font-family: 'Creepster', cursive;
+  width: 414px;
+  border: 2px solid black;
+  background-color: var(--color-dark-purple);
+  margin: 2em auto 0;
+  padding: 0.5em;
+  font-size: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 100px);
+  grid-gap: 10px;
+  color: var(--color-white);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.result {
+  grid-column: span 4;
+  padding: 1em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+}
+
+.button[data-value="C"] {
+  background-color: var(--color-dark-orange);;
+}
+
+.button[data-value="="] {
+  grid-column: span 2;
+  background-color: var(--color-pumpkin);
+  color: var(--color-black);
+}
+
+.button[data-value="7"],
+.button[data-value="8"],
+.button[data-value="9"],
+.button[data-value="4"],
+.button[data-value="5"],
+.button[data-value="6"],
+.button[data-value="1"],
+.button[data-value="2"],
+.button[data-value="3"],
+.button[data-value="0"],
+.button[data-value="."] {
+  background-color: var(--color-purple);;
+}
+
+.button[data-value="+/-"],
+.button[data-value="%"],
+.button[data-value="÷"],
+.button[data-value="x"],
+.button[data-value="-"],
+.button[data-value="+"] {
+  background-color: var(--color-black);;
+}
+
