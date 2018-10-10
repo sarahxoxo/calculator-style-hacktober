@@ -1,0 +1,32 @@
+body {
+    background-color: #26488f;
+}
+#calculator {
+    width: 414px;
+    text-align: center;
+    margin: 35px auto;
+    background-color: #fff;
+    font-size: 0;
+    box-shadow: 1px 5px 30px 1px rgba(0,0,0,0.2);
+  }
+.button, .result {
+    background-color: #3884cf;
+    border: 1px solid #36d3cb;
+    color: #dfd2c1;
+    display: inline-block;
+    width:25%; 
+    height:103.5px;
+    font-size:30px;
+    box-sizing:border-box;
+    line-height: 101.5px;
+    cursor: pointer;
+  }
+.result {
+    width:100%;
+    cursor: default;
+    text-align: right;
+    padding: 0 10px;
+  }
+#calculator div:last-child {
+    width:50%;
+  }
