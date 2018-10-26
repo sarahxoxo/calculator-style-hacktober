@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+  background-color: #D991A2;
+}
+#calculator {
+  width: 450x;
+  text-align: center;
+  margin: 35px auto;
+  background-color: black;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 15px 50px;
+}
+
+.button, .result {
+  display: inline-block;
+  width:25%;
+  background-color: #ffffff;
+  height:109.5px;
+  font-size:30px;
+  border: 1px solid #000000;
+  box-sizing:border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+}
+.result {
+  width:100%;
+  cursor: default;
+  text-align: right;
+  padding: 0 10px;
+}
+#calculator div:last-child {
+  width:250px;
+}
