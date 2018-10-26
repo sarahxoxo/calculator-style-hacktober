@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine&effect=font-effect-static');
+
+body {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  background-color: black;
+}
+#calculator {
+  width: 450px;
+  text-align: center;
+  margin: 150px auto;
+  background-color: yellow;
+  font-size: 0;
+  border-radius: 35px;
+}
+.button, .result {
+  display: inline-block;
+  width:24%; 
+  background-color: #ff6600;
+  height:103.5px;
+  font-size:30px;
+  border: 1px solid transparent;
+  box-sizing:border-box;
+  border-radius: 16px;
+  margin: 2px;
+  line-height: 101.5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+.button:hover {
+  background-color: #ff6600;
+  transition: background-color .2s;
+}
+.result {
+  width:98%;
+  cursor: default;
+  text-align: right;
+  background: #fff;
+  color: #333;
+  padding: 0 10px;
+}
+#calculator div:last-child {
+  width:48%;
+}
