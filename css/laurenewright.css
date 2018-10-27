@@ -1,0 +1,107 @@
+:root {
+  --color-black: #111111;
+  --color-orange: #915213;
+  --color-light-purple: #7D61C4;
+  --color-yellow: #6B5634;
+  --color-dark-purple: #381391;
+} 
+
+body {
+  background-color: var(--color-black);
+}
+
+#calculator {
+  display: grid;
+  font-family: 'Lucida Sans', cursive;
+  width: 414px;
+  border: 2px solid var(--color-black);
+  border-radius: 4px;
+  background-color: var(--color-orange);
+  margin: 2em auto 0;
+  padding: 0.4em;
+  font-size: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 100px);
+  grid-gap: 10px;
+  color: var(--color-dark-purple);
+  box-shadow: 0 0 4px #000;
+}
+
+#calculator > * {
+  border-radius: 4px;
+}
+
+.result {
+  grid-column: span 4;
+  padding: 1em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button,
+.result {
+  transition: 0.2s all ease-in-out;
+}
+
+.button:hover,
+.switch:hover,
+.button:focus,
+.switch:focus {
+  cursor: pointer;
+  filter: brightness(85%);
+  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
+
+.button[data-value="+/-"],
+.button[data-value="C"],
+.button[data-value="%"],
+.button[data-value="÷"],
+.button[data-value="x"],
+.button[data-value="-"],
+.button[data-value="."],
+.button[data-value="+"] {
+  background-color: var(--color-light-purple);;
+}
+
+.button[data-value="="] {
+  grid-column: span 2;
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+}
+
+.button,
+.result {
+  text-shadow: 0 2px 1px #000;
+  box-shadow: 0 0 4px #000;
+}
+
+.switch,
+.switch:visited {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 2em auto 0;
+  display: block;
+  padding: 0.6em 0.8em;
+  background-color: var(--color-light-purple);
+  color: var(--color-black);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #000;
+  transition: 0.2s ease-in-out;
+}
+
+.switch:hover,
+.switch:focus {
+  background-color: var(--color-yellow);
+  color: var(--color-dark-purple);
+  letter-spacing: 4px;
+}
