@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+  background: #3a3a3a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #3a3a3a, #2f2f2f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #3a3a3a, #2f2f2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+#calculator {
+  width: 500px;
+  text-align: center;
+  margin: 50px auto;
+  background: #ababab;
+  font-size: 0;
+  box-shadow: 0px 0px 15px 5px #000000;
+  font-family: 'Roboto', serif;
+  border: solid 1px #000000;
+}
+
+.button, .result {
+  display: inline-block;
+  width: 25%;
+  color: #FFFFFF;
+  font-size: 30px;
+  box-sizing:border-box;
+  line-height: 101.5px;
+  cursor: pointer;
+  border-top: 1px solid #eeeeee;
+}
+
+.result {
+  padding: 0 10px;
+  border-top: none;
+}
+
+.button {
+  border-right: 1px solid #eeeeee;
+}
+
+.button:hover {
+  background: #3a3a3a;
+  transition: 0.5s;
+}
+
+.button:active {
+  background-color: #e6e6e6;
+  transition: 0.5s;
+}
+
+.result {
+  width:100%;
+  cursor: default;
+  text-align: right;
+  font-size: 48px;
+}
+
+#calculator div:last-child {
+  width:50%;
+  border-right: none;
+}
+
+#calculator div:nth-child(4n+1) {
+  border-right: none;
+}
+
+.switch {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+  outline: none;
+  padding: 15px;
+  font-size: 1.25em;
+  border: 0;
+}
