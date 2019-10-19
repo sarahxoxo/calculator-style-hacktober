@@ -13,7 +13,7 @@ body {
 }
 .button, .result {
   display: inline-block;
-  width: 25%; 
+  width: 32.5%; 
   background-color: rgba(0,0,0,0.8);
   height: 103.5px;
   font-size: 30px;
