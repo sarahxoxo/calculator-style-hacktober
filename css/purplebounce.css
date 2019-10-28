@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Modak&display=swap');
+body {
+    background-color: #CEBBE8;
+    }
+  #calculator {
+    width: 414px;
+    text-align: center;
+    background-color: #9A90A8;
+    margin: 50px auto;
+    font-size: 0;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: 1px 5px 50px 1px #F4EDFF;
+    
+  }
+
+  #calculator:hover {
+    animation: bounce 2s infinite;
+  }
+  .button, .result {
+    display: inline-block;
+    width: 25%; 
+    height: 103.5px;
+    font-size: 30px;
+    color: #F1EDF7;
+    border: 1px solid #6E6877;
+    box-sizing: border-box;
+    line-height: 101.5px;
+    cursor: pointer;
+  }
+  
+  button:hover, .button:hover {
+      background: #fff;
+      color: #CEBBE8;
+      transition-duration: 0.5s; 
+    }
+  
+  .result {
+    width:100%;
+    cursor: default;
+    text-align: left;
+    padding: 0 10px;
+  }
+  #calculator div:last-child {
+    width:50%;
+  }
+  
+  .switch {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      height: 50px;
+      border-radius: 20px;
+      border: none;
+      background: #6E6877;
+      color:#F1EDF7;
+      transition: all .5s;
+    }
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0)
+    }
+    40% {
+        transform: translateY(-30px)
+    }
+    60% {
+        transform: translateY(-15px)
+    }
+}
