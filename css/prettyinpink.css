@@ -1,0 +1,44 @@
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,224,232,1) 74%, rgba(255,0,127,1) 100%);
+}
+
+#calculator {
+    width: 300px;
+    text-align: center;
+    margin: 35px auto;
+    color: #ffffff;
+    font-size: 0;
+}
+
+.button, .result {
+    display: inline-block;
+    width: 25%; 
+    background-color: #ff007f;
+    height: 75px;
+    font-size: 26px;
+    border: 2px solid #ffe0e8;
+    border-radius: 25px;
+    box-sizing: border-box;
+    line-height: 101.5px;
+    cursor: pointer;
+}
+
+.result {
+    width:100%;
+    cursor: default;
+    text-align: right;
+    padding: 0 10px;
+}
+
+#calculator div:last-child {
+    width:50%;
+}
+
+.switch {
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #ffe0e8;
+    border-radius: 15px;
+}
