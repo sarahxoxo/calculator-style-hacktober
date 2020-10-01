@@ -6,10 +6,12 @@
 .button{
   background-color:#eee;
   border-color:#ccc;
+  border-style: inset;
 }
 .result{
   background-color:#FFF;
   border-color:#ccc;
+  border-style: solid;
 }
 body{
   background-color:#ddd;
